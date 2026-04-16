@@ -2,11 +2,6 @@
 <html>
 <head>
 <title>Frank Estin Novak</title>
-<script>
-function myFunction() {
-  document.getElementById("image1").innerHTML = "Paragraph changed.";
-}
-</script>
 </head>
 <body>
 
@@ -20,6 +15,13 @@ This is actually just a sentence.
 <b> This should be bolded </b>
 <p>
 
-<button type="button" onclick="myFunction()">To new page</button>
+const audioContext = new AudioContext();
+  <audio src="myCoolTrack.mp3"></audio>
+  // get the audio element
+const audioElement = document.querySelector("audio");
+
+// pass it into the audio context
+const track = audioContext.createMediaElementSource(audioElement);
+  
 </body>
 </html>
